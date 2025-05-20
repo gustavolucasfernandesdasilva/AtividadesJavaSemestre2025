@@ -1,44 +1,19 @@
-import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class SistemaEstacionamento {
-    private String placa;
-    private String modelo;
-    private String marca;
-    private String tipo; // pequeno, grande, moto
-    private LocalDateTime entrada;
+    public static void main(String[] args) {
 
-    public SistemaEstacionamento(String placa, String modelo, String marca, String tipo) {
-        this.placa = placa;
-        this.modelo = modelo;
-        this.marca = marca;
-        this.tipo = tipo.toLowerCase();
-        this.entrada = LocalDateTime.now();
+        Veiculo meuVeiculo = new Veiculo("");
+
+        System.out.println("placa : " + meuVeiculo.getplaca()+ "\n"+ " marca : " meuVeiculo.getMarca()+ "\n" +meuVeiculo.getmodelo());
+
+     Arraylist<Veiculo> veiculo = new ArrayList<>();
+        veiculo.add(meuVeiculo);
+
+        System.out.println(veiculo.get(0));
+
+
     }
-
-    public String getplaca() {
-        return placa;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public String getmodelo() {
-        return modelo;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-
-    public void mostrarInformacoes() {
-        System.out.println("Placa: " + placa);
-        System.out.println("marca: " + marca);
-        System.out.println("modelo: " + modelo);
-        System.out.println("tipo: " + tipo);
-
-
-     }
 
 }
+
