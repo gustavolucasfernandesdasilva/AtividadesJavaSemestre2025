@@ -1,20 +1,23 @@
-import java.time.LocalDateTime
-
 public class Vagas {
-  private Veiculo veiculo;
-  private LocalDateTime entrada;
+  private String  Veiculo;
+  private String  entrada;
 
-    public Vaga(Veiculo veiculo , LocalDateTime entrada );
-
-    public String getpveiculo() {
-        return veiculo;
+    public Vagas(String veiculo, String entrada) {
+        this.Veiculo = Veiculo;
+        this.entrada = entrada;
     }
 
+    public String getVeiculo() {
+        return Veiculo;
+    }
 
-    public String getmodelo() {
+    public String getEntrada() {
         return entrada;
     }
 
-}
+
+    }
+
+
 
 

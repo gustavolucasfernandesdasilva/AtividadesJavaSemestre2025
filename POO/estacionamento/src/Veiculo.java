@@ -1,5 +1,3 @@
-import java.time.LocalDateTime;
-
 public class Veiculo {
     private String placa;
     private String modelo;
@@ -7,7 +5,7 @@ public class Veiculo {
 
 
 
-    public Veiculo(String placa, String modelo, String marca, String tipo) {
+    public Veiculo(String placa, String modelo, String marca) {
         this.placa = placa;
         this.modelo = modelo;
         this.marca = marca;
@@ -17,7 +15,6 @@ public class Veiculo {
     public String getplaca() {
         return placa;
     }
-
 
     public String getmodelo() {
         return modelo;

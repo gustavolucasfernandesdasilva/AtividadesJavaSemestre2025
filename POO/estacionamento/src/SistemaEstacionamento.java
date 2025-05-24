@@ -1,19 +1,14 @@
 import java.util.ArrayList;
 
 public class SistemaEstacionamento {
-    public static void main(String[] args) {
+    public static  void estacionamento (String placa, String modelo, String marca) {
 
-        Veiculo meuVeiculo = new Veiculo("");
+      Veiculo meuVeiculo = new Veiculo(placa,modelo,marca);
 
-        System.out.println("placa : " + meuVeiculo.getplaca()+ "\n"+ " marca : " meuVeiculo.getMarca()+ "\n" +meuVeiculo.getmodelo());
+        System.out.println("placa : " + meuVeiculo.getplaca() + "\n" + " marca : " + meuVeiculo.getMarca() + "\n" + " modelo : " +meuVeiculo.getmodelo());
 
-     Arraylist<Veiculo> veiculo = new ArrayList<>();
-        veiculo.add(meuVeiculo);
-
-        System.out.println(veiculo.get(0));
 
 
     }
-
 }
 
